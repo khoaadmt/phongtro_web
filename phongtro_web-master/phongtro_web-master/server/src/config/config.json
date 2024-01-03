@@ -1,0 +1,11 @@
+{
+  "development": {
+      "username": "root",
+      "password": null,
+      "database": "phongtro",
+      "host": "localhost",
+      "dialect": "mysql",
+      "port": "3308",
+      "logging": false
+  }
+}

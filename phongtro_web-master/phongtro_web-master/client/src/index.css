@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Màu nền với độ mờ */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px; /* Điều chỉnh độ rộng của modal */
+    width: 100%;
+}
+
+/* Định dạng nút trong modal */
+button {
+    cursor: pointer;
+    background-color: #007bff; /* Màu nền của nút */
+    color: #fff; /* Màu chữ của nút */
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.bg-navbar {
+    background-color: #343a40;
+}
+button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.star-item {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    height: 5px;
+}
+
+input[type="range"]::-ms-track {
+    appearance: none;
+    height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 1rem;
+    margin-top: -0.6rem;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    border: solid 1px rgb(144, 211, 255);
+}
+
+input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 1rem;
+    margin-top: -0.6rem;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb:active {
+    border: solid 1px rgb(144, 211, 255);
+}
+
+input[type="range"]::-ms-thumb {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 1rem;
+    margin-top: -0.6rem;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb:active {
+    border: solid 1px rgb(144, 211, 255);
+}
+
+button.slick-arrow::before {
+    font-size: 50px !important;
+    color: yellow !important;
+}
+
+.slick-next {
+    right: 35px !important;
+    top: 45% !important;
+}
+
+.slick-prev {
+    left: 10px !important;
+    z-index: 10 !important;
+    top: 45% !important;
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+}
